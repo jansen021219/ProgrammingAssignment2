@@ -7,7 +7,7 @@
 ## January 18, 2021, Assignment for Week #3, JJLM
 
 
-makeCacheMatrix <- function(x = matrix()) {
+makeCacheMatrix <- function(M = matrix()) {
     inv <- NULL                             ## The NULL is the one that will perform using the inv function. This will hold the value of the inverse matrix
     set <- function(J) {                    ## use the function J for a new assign
         M <<- J                             ## Use the variable M and J
@@ -26,7 +26,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## This function will enable to define the value of the inverse matrix by using the file from github
 ## If the program will not able to calculate the matrix, use the cacheSolve file to solve the inverse matrix
 
-cacheSolve <- function(x, ...) {
+cacheSolve <- function(M, ...) {
         ## Return a matrix that is the inverse of 'x'
     inv <- M$getinverse()			   ## Use the value of M
     if(!is.null(inv)) {				   ## Null into the inv
